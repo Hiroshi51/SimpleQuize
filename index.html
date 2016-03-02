@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Quize Game</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="js/question.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<body>
+<header>
+<div id = "topBar">
+<h1>English Vacabulary in USE</h1>
+</div>
+</header>
+<div id = "wrapper">
+<div class="headIndex">
+<h2>Level1</h2>
+<p>Welcome to the Test Level1.</p>
+<p>In this course, You can learn words especially used in the programming field</p>
+</div>
+
+<!--ScoreBoard begins-->
+<div id="scoreBoard">
+<span>You've got</span>
+<span class="points"></span>
+<span>points!!</span>
+</div>
+
+<!--FinishBtn begins-->
+<div id="finishBtn">
+<span>Go and see the Result!</span>
+</div>
+
+<!--question begins-->
+<section>
+<div class="questionWrapper">
+<h3>Q1.What's the meaning of "detect"?</h3>
+<form class="Q1">
+<p><input type="radio" name="a1" value="correct"    class="inputRadio1"><label>to notice or discover something, especially something that is not easy to see, hear etc</label></input></p>
+<p><input type="radio" name="a1" value="incorrect1" class="inputRadio2"><label>to think about something that you are not sure about and try to guess what is true, what will happen etc</label></input></p>
+<p><input type="radio" name="a1" value="incorrect2" class="inputRadio3"><label>to dislike something very much</label></input></p>
+<p><input type="radio" name="a1" value="incorrect3" class="inputRadio4"><label>something that is tedious continues for a long time and is not interesting</label></input></p>
+</form>
+<p class="btn answer"></p>
+<ul class = "ansList">
+</ul>
+</div>
+</section>
+<!--question ends-->
+
+<!--question begins-->
+<section>
+<div class="questionWrapper">
+
+<h3>Q2.What's the meaning of "retrieve"?</h3>
+<form>
+<p><input type="radio" name="b1" value="incorrect1" class="inputRadio"><label>to or towards a lower place or position</label></p>
+<p><input type="radio" name="b1" value="incorrect2" class=""><label>acts or details that tell you something about a situation, person, event etc</label></p>
+<p><input type="radio" name="b1" value="correct"    class=""><label>to find something and bring it back</label></p>
+<p><input type="radio" name="b1" value="incorrect3" class=""><label>describing or relating to only the main features or parts of something, not the details</label></p>
+</form>
+<p class="btn answer"></p>
+<ul class = "ansList">
+</ul>
+
+</div>
+</section>
+<!--question ends-->
+
+<!--question begins-->
+<section>
+<div class="questionWrapper">
+<h3>Q3.Choose a word given below that is nearly simillar to the word "derive" </h3>
+<form>
+<p><input type="radio" name="c1" value="correct" class="inputRadio correctAnswer"><label>educe</label></p>
+<p><input type="radio" name="c1" value="incorrect2" class="inputRadio incorrectAnswer1"><label>gray</label></p>
+<p><input type="radio" name="c1" value="incorrect1"    class="inputRadio incorrectAnswer2"><label>Supersticious</label></p>
+<p><input type="radio" name="c1" value="incorrect3" class="inputRadio incorrectAnswer3"><label>details</label></p>
+</form>
+<p class="btn answer"></p>
+<ul class = "ansList">
+</ul>
+</div>
+</section>
+<!--question ends-->
+
+
+
+<!--question begins-->
+<section>
+<div class="questionWrapper">
+<h3>Q4.Enter how to spell the word opposite to big</h3>
+
+<input class="ans1input" type="text" name="answer1text" onkeypress="enterKeyEvent(event.keyCode);"></input> <span>Not case-sensitive</span>
+
+<p class="btn answer2"></p>
+<p class="textAnswer">small</p>
+<ul class = "ansList">
+</ul>
+</div>
+</section>
+<!--question ends-->
+
+<!--question begins-->
+<section>
+<div class="questionWrapper">
+<h3>Q5.what's the best word to fill the blank in the Sentence given below</h3>
+<p class = "fillinQuestion">I <span class="blank">　　　</span> born in Japan in 1982.</p>
+
+<input class="ans1input" type="text" name="answer1text"></input> <span>Not case-sensitive</span>
+
+<p class="btn answer2"></p>
+<p class="textAnswer">was</p>
+<ul class = "ansList">
+</ul>
+</div>
+</section>
+<!--question ends-->
+
+<!--question begins-->
+<section>
+<div class="questionWrapper">
+<h3>Q6.Choose a word given below that is nearly simillar to the word "iterate" </h3>
+<form>
+
+<p><input type="radio" name="d1" value="incorrect2" class="inputRadio incorrectAnswer1"><label>sue</label></p>
+<p><input type="radio" name="d1" value="incorrect1"    class="inputRadio incorrectAnswer2"><label>notice</label></p>
+<p><input type="radio" name="d1" value="incorrect3" class="inputRadio incorrectAnswer3"><label>super</label></p>
+<p><input type="radio" name="d1" value="correct" class="inputRadio correctAnswer"><label>repeat</label></p>
+</form>
+<p class="btn answer"></p>
+<ul class = "ansList">
+</ul>
+</div>
+</section>
+<!--question ends-->
+
+<!--question begins-->
+<section>
+<div class="questionWrapper">
+<h3>Q7.Which is the meaning of "erupt" </h3>
+<form>
+
+<p><input type="radio" name="e1" value="incorrect1" class="inputRadio incorrectAnswer1"><label>relating to the government, politics, and public affairs of a country</label></p>
+<p><input type="radio" name="e1" value="correct"    class="inputRadio incorrectAnswer2"><label>if a	volcano	erupts, it explodes and sends smoke, fire, and rock into the sky</label></p>
+<p><input type="radio" name="e1" value="incorrect2" class="inputRadio incorrectAnswer3"><label>relating to the government, politics, and public affairs of a country</label></p>
+<p><input type="radio" name="e1" value="incorrect3" class="inputRadio correctAnswer"><label>used to refer to a person, thing, idea etc that has already been mentioned or is already known about</label></p>
+</form>
+<p class="btn answer"></p>
+<ul class = "ansList">
+</ul>
+</div>
+</section>
+<!--question ends-->
+
+<!--question begins-->
+<section>
+<div class="questionWrapper">
+<h3>Q8.Which is the meaning of "concatenating" </h3>
+<form>
+
+<p><input type="radio" name="f1" value="incorrect1" class="inputRadio incorrectAnswer1"><label>relating to the government, politics, and public affairs of a country</label></p>
+<p><input type="radio" name="f1" value="correct"    class="inputRadio incorrectAnswer2"><label>if a	volcano	erupts, it explodes and sends smoke, fire, and rock into the sky</label></p>
+<p><input type="radio" name="f1" value="incorrect2" class="inputRadio incorrectAnswer3"><label>relating to the government, politics, and public affairs of a country</label></p>
+<p><input type="radio" name="f1" value="incorrect3" class="inputRadio correctAnswer"><label>used to refer to a person, thing, idea etc that has already been mentioned or is already known about</label></p>
+</form>
+<p class="btn answer"></p>
+<ul class = "ansList">
+</ul>
+</div>
+</section>
+<!--question ends-->
+
+
+
+<!--question begins-->
+<section>
+<div class="questionWrapper">
+<h3>Q9.what's the best word to fill the blank in the Sentence given below</h3>
+<p class = "fillinQuestion">Thay like<span class="blank">　　　</span> play succer.</p>
+
+<input class="ans1input" type="text" name="answer1text"></input> <span>Not case-sensitive</span>
+
+<p class="btn answer2"></p>
+<p class="textAnswer">to</p>
+<ul class = "ansList">
+</ul>
+</div>
+</section>
+<!--question ends-->
+
+
+<!--question begins-->
+<section>
+<div class="questionWrapper">
+<h3>Q10.what's the best word to fill the blank in the Sentence given below</h3>
+<p class = "fillinQuestion">Thay are<span class="blank">　　　</span> play succer.</p>
+
+<input class="ans1input" type="text" name="answer1text"></input> <span>Not case-sensitive</span>
+
+<p class="btn answer2"></p>
+<p class="textAnswer">playing</p>
+<ul class = "ansList">
+</ul>
+</div>
+</section>
+<!--question ends-->
+
+</div>
+</body>
+</html>
